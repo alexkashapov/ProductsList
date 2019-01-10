@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        android:entries="@array/orientation"
+        android:title="Ориентация экрана"
+        app:key="orientation"
+        android:defaultValue="2"
+        android:dialogTitle="Выберите стиль для шрифта"
+        android:entryValues="@array/orientationvalues"/>
+
+    <ListPreference
+        android:entries="@array/theme"
+        android:entryValues="@array/themevalues"
+        android:defaultValue="1"
+        android:title="Тема приложения"
+        app:key="theme" />
+    <ListPreference
+        android:entries="@array/fontsize"
+        android:entryValues="@array/fontvalues"
+        android:title="Размер шрифта"
+        android:defaultValue="2"
+        app:key="font_size" />
+    <SwitchPreference
+        android:text="Не выключать экран во время работы приложения"
+        android:title="Не выключать экран"
+        app:key="nooffscreen" />
+    <SwitchPreference
+        android:text="Закрывать приложение двойным нажатием кнопки Назад"
+        android:title="Выход по двойному Назад"
+        app:key="exit" />
+    <PreferenceCategory
+        android:title="Интерфейс списков"
+        app:key="list_category">
+        <SwitchPreference
+            android:text="Группировать товары в списке по категориям"
+            android:title="Товары по категориям"
+            app:key="prod_cats" />
+        <SwitchPreference
+            android:text="Отображать вычеркнутые товары внизу списка"
+            android:title="Вычеркнутые снизу"
+            app:key="under" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

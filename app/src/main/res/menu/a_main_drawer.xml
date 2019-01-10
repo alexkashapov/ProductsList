@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Покупки">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_lists"
+                    android:icon="@drawable/baseline_shopping_cart_black_24dp"
+                    android:title="Списки покупок" />
+                <item
+                    android:id="@+id/nav_bar_code"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="Сканер  штрих-кодов" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Справка">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="О программе" />
+        </menu>
+    </item>
+</menu>
