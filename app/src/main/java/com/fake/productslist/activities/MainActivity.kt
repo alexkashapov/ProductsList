@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity(),
         setContentView(R.layout.a_main)
         setSupportActionBar(toolbar)
 
+        supportActionBar?.setTitle("Time Manager")
+
 
 //        fab.setOnClickListener {
 //
